@@ -1,7 +1,7 @@
-
+// card 1 
 .card-1 {
     position: relative;
-    width: 21.875rem;
+    width: 50rem;
     height: 25rem;
     background: black;
     overflow: hidden;
@@ -16,6 +16,19 @@
 .img-2 {
     width: 100%;
     height: 26rem;
+}
+
+.img-3 {
+    width: 100%;
+    height: 26rem;
+}
+.img-4 {
+    width: 100%;
+    max-width: 100%;
+}
+.img-5 {
+    margin: 0;
+    max-width: 100%;
 }
 
 input,
@@ -34,16 +47,19 @@ input {
 .toggle-1 {
     pointer-events: none;
     border-radius: 50%; 
-    background: white;
+    background: rgb(0, 0, 0);
     text-align: center;
     line-height: 3.125rem;
     font-size: 1.625rem;
-    box-shadow: 0 0 0 0px #9c27b0;
+    box-shadow: 0 0 0 0px #ffffff;
     transition: 0.5s;
+    color: white;
+    
 }
 input:checked ~ .toggle-1 {
-    box-shadow: 0 0 0 31.25rem #9c27b0;
+    box-shadow: 0 0 0 51rem #ffffff7c;
     transform: rotate(225deg);
+    
 }
 
 .content-1 {
@@ -58,6 +74,7 @@ input:checked ~ .toggle-1 {
     pointer-events: none;
     transition: 0.5s;
     opacity: 0;
+    
 }
 
 
@@ -67,15 +84,14 @@ input:checked ~ .content-1 {
 }
 .content-1 h2 {
     margin-bottom: 0.3125rem;
-    color: white;
     font-size: 2rem;
 }
 .content-1 p {
     margin: 0;
-    color: white;
     font-size: 1.5em;
     padding-top: 30px;
 }
+// the end of the first box
 
 // start of the next box
 
@@ -145,6 +161,236 @@ input:checked ~ .content-2 {
     font-size: 2rem;
 }
 .content-2 p {
+    margin: 0;
+    color: white;
+    font-size: 1.5em;
+    padding-top: 30px;
+}
+// end of the sec box
+
+// start of third box
+
+.card-3 {
+    position: relative;
+    width: 50rem;
+    height: 25rem;
+    background: black;
+    overflow: hidden;
+    margin-top: 3em;
+    margin-left: 4em;
+}
+
+input,
+.toggle-3 {
+    position: absolute;
+    width: 3.125rem;
+    height: 3.125rem;
+    bottom: 1.25rem;
+    right: 1.25rem;
+    outline: none;
+    z-index: 10;
+}
+input {
+    opacity: 0;
+}
+.toggle-3 {
+    pointer-events: none;
+    border-radius: 50%; 
+    background: rgb(0, 0, 0);
+    text-align: center;
+    line-height: 3.125rem;
+    font-size: 1.625rem;
+    box-shadow: 0 0 0 0px #ffffff;
+    transition: 0.5s;
+    color: white;
+    
+}
+input:checked ~ .toggle-3 {
+    box-shadow: 0 0 0 51rem #ffffff9f;
+    transform: rotate(225deg);
+    
+}
+
+.imgbox-3,
+.content-3 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.content-3 {
+    padding: 1.25rem;
+    box-sizing: border-box;
+    z-index: 11;
+    pointer-events: none;
+    transition: 0.5s;
+    opacity: 0;
+}
+
+input:checked ~ .content-3 {
+    opacity: 1;
+    transition-delay: 0.5s;
+}
+.content-3 h2 {
+    margin-bottom: 0.3125rem;
+    color: rgb(0, 0, 0);
+    font-size: 2rem;
+}
+.content-3 p {
+    margin: 0;
+    color: rgb(0, 0, 0);
+    font-size: 1.5em;
+    padding-top: 30px;
+}
+// end of box 3
+
+// start of box 4 
+.card-4 {
+    position: relative;
+    width: 50rem;
+    height: 25rem;
+    background: black;
+    overflow: hidden;
+    margin-top: 3em;
+    margin-left: 4em;
+}
+
+input,
+.toggle-4 {
+    position: absolute;
+    width: 3.125rem;
+    height: 3.125rem;
+    bottom: 1.25rem;
+    right: 1.25rem;
+    outline: none;
+    z-index: 10;
+}
+input {
+    opacity: 0;
+}
+.toggle-4 {
+    pointer-events: none;
+    border-radius: 50%; 
+    background: rgb(0, 0, 0);
+    text-align: center;
+    line-height: 3.125rem;
+    font-size: 1.625rem;
+    box-shadow: 0 0 0 0px #ffffff;
+    transition: 0.5s;
+    color: white;
+    
+}
+input:checked ~ .toggle-4 {
+    box-shadow: 0 0 0 51rem #ffffff9f;
+    transform: rotate(225deg);
+    
+}
+
+.imgbox-4,
+.content-4 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.content-4 {
+    padding: 1.25rem;
+    box-sizing: border-box;
+    z-index: 11;
+    pointer-events: none;
+    transition: 0.5s;
+    opacity: 0;
+}
+
+input:checked ~ .content-4 {
+    opacity: 1;
+    transition-delay: 0.5s;
+}
+.content-4 h2 {
+    margin-bottom: 0.3125rem;
+    color: rgb(0, 0, 0);
+    font-size: 2rem;
+}
+.content-4 p {
+    margin: 0;
+    color: rgb(0, 0, 0);
+    font-size: 1.5em;
+    padding-top: 30px;
+}
+// end of box 4
+
+// start of box 5
+
+.card-5 {
+    position: relative;
+    width: 21.875rem;
+    height: 25rem;
+    background: black;
+    overflow: hidden;
+    margin-top: 3em;
+    margin-left: 4em;
+}
+
+input,
+.toggle-5 {
+    position: absolute;
+    width: 3.125rem;
+    height: 3.125rem;
+    bottom: 1.25rem;
+    right: 1.25rem;
+    outline: none;
+    z-index: 10;
+}
+input {
+    opacity: 0;
+}
+.toggle-5 {
+    pointer-events: none;
+    border-radius: 50%; 
+    background: white;
+    text-align: center;
+    line-height: 3.125rem;
+    font-size: 1.625rem;
+    box-shadow: 0 0 0 0px #9c27b0;
+    transition: 0.5s;
+}
+input:checked ~ .toggle-5 {
+    box-shadow: 0 0 0 31.25rem #9c27b0;
+    transform: rotate(225deg);
+}
+
+.imgbox-5,
+.content-5 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.content-5 {
+    padding: 1.25rem;
+    box-sizing: border-box;
+    z-index: 11;
+    pointer-events: none;
+    transition: 0.5s;
+    opacity: 0;
+}
+
+input:checked ~ .content-5 {
+    opacity: 1;
+    transition-delay: 0.5s;
+}
+.content-5 h2 {
+    margin-bottom: 0.3125rem;
+    color: white;
+    font-size: 2rem;
+}
+.content-5 p {
     margin: 0;
     color: white;
     font-size: 1.5em;
