@@ -5,33 +5,35 @@
 }
 
 #container {
-    margin-left: 28rem;  
-    display: inline-block;    
+    margin-left: 57rem;  
+    display: inline-block;  
+    position: fixed;  
+    z-index: 1;
 }
 #container ul {
     list-style: none;
     
 }
 #container ul li {
-    background-color: rgb(255, 115, 0);
+    background-color: rgba(0, 0, 0, 0.582);
     width: 9.375rem;
-    border: 0.0625rem solid white;
     height: 3.125rem;
     line-height: 3.125rem;
     text-align: center;
     float: left;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     font-size: 1.1875rem;
     
 }
 #container ul li:hover {
-    background-color: rgba(136, 255, 0, 0.822);
+    background-color: rgba(0, 0, 0, 0.747);
 }
 #container ul ul {
     display: none;
 }
 #container ul li:hover > ul {
     display: block;
+
 }
 header {
     background-image: url(../images/trial.jpg);
@@ -43,30 +45,12 @@ header {
 #intro {
     color: rgb(255, 123, 0);
     text-align: center;
-    margin-top: 14rem;
-    font-size: 8rem;
+    font-size: 6rem;
     text-shadow: 0.5rem 0.5rem rgba(0, 0, 0, 0.767);
+    padding-top: 20rem;
 }
 
-li:hover > ul.menu-1 li {
-  opacity: 1;
 
-  animation: menu-1;
-  animation-duration: 1000ms;
-  animation-timing-function: ease-in-out;  
-  perspective: 62.5rem;       
-}
-
-@keyframes menu-1 {
-    0% {
-        opacity: 0;
-        transform: rotateY(-180deg) translateY(1.875rem);
-    }
-    100% {
-        opacity: 1;
-        transform: rotateY(0deg) translateY(0px);
-    }
-}
 
 // the styling for the gallery
 

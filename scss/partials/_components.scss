@@ -31,6 +31,11 @@
     max-width: 100%;
 }
 
+.img-6 {
+    margin: 0;
+    max-width: 100%;
+}
+
 input,
 .toggle-1 {
     position: absolute;
@@ -121,15 +126,16 @@ input {
 .toggle-2 {
     pointer-events: none;
     border-radius: 50%; 
-    background: white;
+    background: rgb(0, 0, 0);
     text-align: center;
     line-height: 3.125rem;
     font-size: 1.625rem;
-    box-shadow: 0 0 0 0px #9c27b0;
+    box-shadow: 0 0 0 0px #ffffff;
     transition: 0.5s;
+    color: white;
 }
 input:checked ~ .toggle-2 {
-    box-shadow: 0 0 0 31.25rem #9c27b0;
+    box-shadow: 0 0 0 31.25rem #ffffffc0;
     transform: rotate(225deg);
 }
 
@@ -157,12 +163,12 @@ input:checked ~ .content-2 {
 }
 .content-2 h2 {
     margin-bottom: 0.3125rem;
-    color: white;
+    color: rgb(0, 0, 0);
     font-size: 2rem;
 }
 .content-2 p {
     margin: 0;
-    color: white;
+    color: rgb(0, 0, 0);
     font-size: 1.5em;
     padding-top: 30px;
 }
@@ -351,15 +357,16 @@ input {
 .toggle-5 {
     pointer-events: none;
     border-radius: 50%; 
-    background: white;
+    background: rgb(0, 0, 0);
     text-align: center;
     line-height: 3.125rem;
     font-size: 1.625rem;
-    box-shadow: 0 0 0 0px #9c27b0;
+    box-shadow: 0 0 0 0px #ffffff;
     transition: 0.5s;
+    color: white;
 }
 input:checked ~ .toggle-5 {
-    box-shadow: 0 0 0 31.25rem #9c27b0;
+    box-shadow: 0 0 0 31.25rem #ffffffc2;
     transform: rotate(225deg);
 }
 
@@ -387,12 +394,181 @@ input:checked ~ .content-5 {
 }
 .content-5 h2 {
     margin-bottom: 0.3125rem;
-    color: white;
+    color: rgb(0, 0, 0);
     font-size: 2rem;
 }
 .content-5 p {
     margin: 0;
-    color: white;
+    color: rgb(0, 0, 0);
     font-size: 1.5em;
     padding-top: 30px;
+}
+// end of box 5
+
+.card-6 {
+    position: relative;
+    width: 50rem;
+    height: 25rem;
+    background: black;
+    overflow: hidden;
+    margin-top: 3em;
+    margin-left: 4em;
+}
+
+input,
+.toggle-6 {
+    position: absolute;
+    width: 3.125rem;
+    height: 3.125rem;
+    bottom: 1.25rem;
+    right: 1.25rem;
+    outline: none;
+    z-index: 10;
+}
+input {
+    opacity: 0;
+}
+.toggle-6 {
+    pointer-events: none;
+    border-radius: 50%; 
+    background: rgb(0, 0, 0);
+    text-align: center;
+    line-height: 3.125rem;
+    font-size: 1.625rem;
+    box-shadow: 0 0 0 0px #ffffff;
+    transition: 0.5s;
+    color: white;
+    
+}
+input:checked ~ .toggle-6 {
+    box-shadow: 0 0 0 51rem #ffffff9f;
+    transform: rotate(225deg);
+    
+}
+
+.imgbox-6,
+.content-6 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.content-6 {
+    padding: 1.25rem;
+    box-sizing: border-box;
+    z-index: 11;
+    pointer-events: none;
+    transition: 0.5s;
+    opacity: 0;
+}
+
+input:checked ~ .content-6 {
+    opacity: 1;
+    transition-delay: 0.5s;
+}
+.content-6 h2 {
+    margin-bottom: 0.3125rem;
+    color: rgb(0, 0, 0);
+    font-size: 2rem;
+}
+.content-6 p {
+    margin: 0;
+    color: rgb(0, 0, 0);
+    font-size: 1.5em;
+    padding-top: 30px;
+}
+
+
+// for the contact page
+#con-html {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+
+#con-body {
+    font-family: 'ZCOOL KuaiLe', cursive;
+    background: url(../images/bg.jpg) no-repeat top center;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    font-size: 1rem;
+}
+
+.con-wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.con-us {
+    width: 100%;
+    max-width: 31.25rem;
+    height: auto;
+    background: rgba(0,0,0,0.7);
+    padding: 2.5rem 3.125rem;
+    border-radius: 0.3125rem;
+}
+
+.con-title {
+    font-size: 2em;
+    line-height: 1.25em;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: 0.125rem;
+    color: #ffc107;
+    padding-bottom: 0.9375rem;
+}
+
+.con-input {
+    padding: 0 1.875rem;
+}
+
+.con-input .con-items {
+    width: 100%;
+    padding-bottom: 0.9375rem;
+}
+
+.con-input .con-items .con-label {
+    display: block;
+    font-size: 1em;
+    color: white;
+    text-transform: capitalize;
+    padding-bottom: 0.3125rem;
+}
+
+.con-input .con-items .input,
+.con-input .con-items .text-area {
+    background: transparent;
+    border: 0;
+    border: 0.0625rem solid white;
+    width: 100%;
+    padding: 0.5rem 0.625rem;
+    font-size: 1em;
+    color: white;
+    border-radius: 0.1875rem;
+}
+
+button {
+    margin-left: 4.5rem;
+    background: #ffc107;
+    color: white;   
+    font-size: 1.25em;
+    padding: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 0.3125rem;
+    cursor: pointer;
+    letter-spacing: 0.125rem;
+}
+
+.link-style {
+    text-decoration: none;
+    color: white;
 }

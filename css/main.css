@@ -3,25 +3,26 @@
   padding: 0; }
 
 #container {
-  margin-left: 28rem;
-  display: inline-block; }
+  margin-left: 57rem;
+  display: inline-block;
+  position: fixed;
+  z-index: 1; }
 
 #container ul {
   list-style: none; }
 
 #container ul li {
-  background-color: #ff7300;
+  background-color: rgba(0, 0, 0, 0.582);
   width: 9.375rem;
-  border: 0.0625rem solid white;
   height: 3.125rem;
   line-height: 3.125rem;
   text-align: center;
   float: left;
-  color: black;
+  color: white;
   font-size: 1.1875rem; }
 
 #container ul li:hover {
-  background-color: rgba(136, 255, 0, 0.822); }
+  background-color: rgba(0, 0, 0, 0.747); }
 
 #container ul ul {
   display: none; }
@@ -37,24 +38,10 @@ header {
 #intro {
   color: #ff7b00;
   text-align: center;
-  margin-top: 14rem;
-  font-size: 8rem;
-  text-shadow: 0.5rem 0.5rem rgba(0, 0, 0, 0.767); }
+  font-size: 6rem;
+  text-shadow: 0.5rem 0.5rem rgba(0, 0, 0, 0.767);
+  padding-top: 20rem; }
 
-li:hover > ul.menu-1 li {
-  opacity: 1;
-  animation: menu-1;
-  animation-duration: 1000ms;
-  animation-timing-function: ease-in-out;
-  perspective: 62.5rem; }
-
-@keyframes menu-1 {
-  0% {
-    opacity: 0;
-    transform: rotateY(-180deg) translateY(1.875rem); }
-  100% {
-    opacity: 1;
-    transform: rotateY(0deg) translateY(0px); } }
 .gal-body {
   background: url(../images/gal-bg.jpg);
   background-repeat: no-repeat;
@@ -504,6 +491,10 @@ li:hover > ul.menu-1 li {
   margin: 0;
   max-width: 100%; }
 
+.img-6 {
+  margin: 0;
+  max-width: 100%; }
+
 input,
 .toggle-1 {
   position: absolute;
@@ -583,15 +574,16 @@ input {
 .toggle-2 {
   pointer-events: none;
   border-radius: 50%;
-  background: white;
+  background: black;
   text-align: center;
   line-height: 3.125rem;
   font-size: 1.625rem;
-  box-shadow: 0 0 0 0px #9c27b0;
-  transition: 0.5s; }
+  box-shadow: 0 0 0 0px #ffffff;
+  transition: 0.5s;
+  color: white; }
 
 input:checked ~ .toggle-2 {
-  box-shadow: 0 0 0 31.25rem #9c27b0;
+  box-shadow: 0 0 0 31.25rem #ffffffc0;
   transform: rotate(225deg); }
 
 .imgbox-2,
@@ -616,12 +608,12 @@ input:checked ~ .content-2 {
 
 .content-2 h2 {
   margin-bottom: 0.3125rem;
-  color: white;
+  color: black;
   font-size: 2rem; }
 
 .content-2 p {
   margin: 0;
-  color: white;
+  color: black;
   font-size: 1.5em;
   padding-top: 30px; }
 
@@ -786,15 +778,16 @@ input {
 .toggle-5 {
   pointer-events: none;
   border-radius: 50%;
-  background: white;
+  background: black;
   text-align: center;
   line-height: 3.125rem;
   font-size: 1.625rem;
-  box-shadow: 0 0 0 0px #9c27b0;
-  transition: 0.5s; }
+  box-shadow: 0 0 0 0px #ffffff;
+  transition: 0.5s;
+  color: white; }
 
 input:checked ~ .toggle-5 {
-  box-shadow: 0 0 0 31.25rem #9c27b0;
+  box-shadow: 0 0 0 31.25rem #ffffffc2;
   transform: rotate(225deg); }
 
 .imgbox-5,
@@ -819,14 +812,162 @@ input:checked ~ .content-5 {
 
 .content-5 h2 {
   margin-bottom: 0.3125rem;
-  color: white;
+  color: black;
   font-size: 2rem; }
 
 .content-5 p {
   margin: 0;
-  color: white;
+  color: black;
   font-size: 1.5em;
   padding-top: 30px; }
+
+.card-6 {
+  position: relative;
+  width: 50rem;
+  height: 25rem;
+  background: black;
+  overflow: hidden;
+  margin-top: 3em;
+  margin-left: 4em; }
+
+input,
+.toggle-6 {
+  position: absolute;
+  width: 3.125rem;
+  height: 3.125rem;
+  bottom: 1.25rem;
+  right: 1.25rem;
+  outline: none;
+  z-index: 10; }
+
+input {
+  opacity: 0; }
+
+.toggle-6 {
+  pointer-events: none;
+  border-radius: 50%;
+  background: black;
+  text-align: center;
+  line-height: 3.125rem;
+  font-size: 1.625rem;
+  box-shadow: 0 0 0 0px #ffffff;
+  transition: 0.5s;
+  color: white; }
+
+input:checked ~ .toggle-6 {
+  box-shadow: 0 0 0 51rem #ffffff9f;
+  transform: rotate(225deg); }
+
+.imgbox-6,
+.content-6 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; }
+
+.content-6 {
+  padding: 1.25rem;
+  box-sizing: border-box;
+  z-index: 11;
+  pointer-events: none;
+  transition: 0.5s;
+  opacity: 0; }
+
+input:checked ~ .content-6 {
+  opacity: 1;
+  transition-delay: 0.5s; }
+
+.content-6 h2 {
+  margin-bottom: 0.3125rem;
+  color: black;
+  font-size: 2rem; }
+
+.content-6 p {
+  margin: 0;
+  color: black;
+  font-size: 1.5em;
+  padding-top: 30px; }
+
+#con-html {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box; }
+
+#con-body {
+  font-family: 'ZCOOL KuaiLe', cursive;
+  background: url(../images/bg.jpg) no-repeat top center;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  font-size: 1rem; }
+
+.con-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+
+.con-us {
+  width: 100%;
+  max-width: 31.25rem;
+  height: auto;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 2.5rem 3.125rem;
+  border-radius: 0.3125rem; }
+
+.con-title {
+  font-size: 2em;
+  line-height: 1.25em;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 900;
+  letter-spacing: 0.125rem;
+  color: #ffc107;
+  padding-bottom: 0.9375rem; }
+
+.con-input {
+  padding: 0 1.875rem; }
+
+.con-input .con-items {
+  width: 100%;
+  padding-bottom: 0.9375rem; }
+
+.con-input .con-items .con-label {
+  display: block;
+  font-size: 1em;
+  color: white;
+  text-transform: capitalize;
+  padding-bottom: 0.3125rem; }
+
+.con-input .con-items .input,
+.con-input .con-items .text-area {
+  background: transparent;
+  border: 0;
+  border: 0.0625rem solid white;
+  width: 100%;
+  padding: 0.5rem 0.625rem;
+  font-size: 1em;
+  color: white;
+  border-radius: 0.1875rem; }
+
+button {
+  margin-left: 4.5rem;
+  background: #ffc107;
+  color: white;
+  font-size: 1.25em;
+  padding: 1rem;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-radius: 0.3125rem;
+  cursor: pointer;
+  letter-spacing: 0.125rem; }
+
+.link-style {
+  text-decoration: none;
+  color: white; }
 
 #card-container {
   background-color: black;
@@ -834,8 +975,8 @@ input:checked ~ .content-5 {
   margin: 0 auto;
   max-width: 1000px;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: repeat(4, auto);
-  grid-template-areas: "card1 card1" "card2 card5" "card3 card3" "card4 card4"; }
+  grid-template-rows: repeat(auto, auto);
+  grid-template-areas: "card1 card1" "card2 card5" "card3 card3" "card4 card4" "card6 card6"; }
 
 .card-1 {
   grid-area: card1; }
@@ -851,5 +992,8 @@ input:checked ~ .content-5 {
 
 .card-5 {
   grid-area: card5; }
+
+.card-6 {
+  grid-area: card6; }
 
 /*# sourceMappingURL=main.css.map */

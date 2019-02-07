@@ -1,14 +1,51 @@
 <!DOCTYPE html>
-<html>
+<html id="con-html">
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Contact</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    <script src="main.js"></script>
+    <link rel="stylesheet"  href="css/styling.css" />
+    <link href="https://fonts.googleapis.com/css?family=ZCOOL+KuaiLe" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
 </head>
-<body>
+<body id="con-body">
+<form action="" method="get" id="submit" target="_self">
     
+
+
+<div class="con-wrapper">
+    <div class="con-us">
+        <div class="con-title">Contact us</div>
+
+        <div class="con-input">
+            <div class="con-items">
+                <label for="name" class="con-label">Name</label>
+                <input id="con-name" type="text" class="input" required>
+            </div>
+            <div class="con-items">
+                <label for="surname" class="con-label">Surname</label>
+                <input id="con-surname" type="text" class="input" required>
+            </div>
+            <div class="con-items">
+                <label for="email" class="con-label">Email</label>
+                <input id="con-email" type="text" class="input" required>
+            </div>
+            <div class="con-items">
+                <label for="subject" class="con-label">Subject</label>
+                <input id="con-subject" type="text" class="input" required>
+            </div>
+            <div class="con-items">
+                <label for="name" class="con-label">Message</label>
+                <textarea id="msg" class="text-area"></textarea>
+            </div>
+        </div>
+
+        <button type="submit" name="confirm " value="confirm form">Submit</button>
+    </div>
+</div>
+</form>
+
+
 </body>
 </html>
