@@ -1,0 +1,73 @@
+.con-body {
+   background:  url(../images/sunset.jpg) no-repeat top center;
+   background-size: cover;
+   height: 100vh;
+  
+}
+
+.con-wrapper {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 90%;
+    padding: 0 1.25rem;
+}
+
+.contact-form {
+    max-width: 40.375rem;
+    margin: 0 auto;
+    background: rgba(0,0,0,0.8);
+    padding: 1.875rem;
+    border-radius: 0.3125rem;
+    display: flex;
+    box-shadow: 0,0,0.625rem white;
+    height: 30rem;
+}
+
+.input-fields {
+    display: flex;
+    flex-direction: column;
+    margin-right: 4%;
+}
+
+.input-fields,
+.msg {
+    width: 48%;
+}
+
+.input-fields .con-input,
+.msg textarea {
+    margin: 0.625rem 0;
+    background: transparent;
+    border: 0;
+    border-bottom: 0.125rem solid #c5ecfd;
+    padding: 0.625rem;
+    color: #c5ecfd;
+    width: 100%
+}
+
+.msg textarea {
+    height: 13.25rem;
+}
+
+.con-btn {
+    background: #39b7dd;
+    text-align: center;
+    padding: 0.9375rem;
+    border-radius: 0.3125rem;
+    color: #fff;
+    cursor: pointer;
+    text-transform: uppercase;
+
+}
+
+
+
+::-webkit-input-placeholder{
+    color: #c5ecfd;
+}
+
+::-moz-input-placeholder{
+    color: #c5ecfd;
+}
+

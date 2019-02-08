@@ -1,51 +1,49 @@
 <!DOCTYPE html>
-<html id="con-html">
+<html>
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Contact</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet"  href="css/styling.css" />
-    <link href="https://fonts.googleapis.com/css?family=ZCOOL+KuaiLe" rel="stylesheet">
+    
     <link rel="stylesheet" href="css/main.css">
 </head>
-<body id="con-body">
-<form action="" method="get" id="submit" target="_self">
-    
+<body class="con-body">
+
+        <div id="container">
+                <ul>
+                   <a href="index.html"><li>Home</li></a> 
+                    <li><a href="gallery.html" class="link-style">Gallery</a></li>
+                    <li><a href="contact.html" class="link-style">Contact</a></li>
+                </ul>
+                </div>
 
 
-<div class="con-wrapper">
-    <div class="con-us">
-        <div class="con-title">Contact us</div>
 
-        <div class="con-input">
-            <div class="con-items">
-                <label for="name" class="con-label">Name</label>
-                <input id="con-name" type="text" class="input" required>
+
+
+
+    <div class="con-wrapper">
+        <div class="contact-form">
+            <div class="input-fields">
+                <input type="text" class="con-input" placeholder="Name" required>
+                <input type="text" class="con-input" placeholder="Surname" required>
+                <input type="text" class="con-input" placeholder="Email" required>
+                <select name="con-act" id="con-act" required>
+                    <option value="">Camping</option>
+                    <option value="">Climbing</option>
+                    <option value="">Canoeing</option>
+                    <option value="">Fishing</option>
+                    <option value="">Hiking</option>
+                    <option value="">Hunting</option>
+                </select>
             </div>
-            <div class="con-items">
-                <label for="surname" class="con-label">Surname</label>
-                <input id="con-surname" type="text" class="input" required>
-            </div>
-            <div class="con-items">
-                <label for="email" class="con-label">Email</label>
-                <input id="con-email" type="text" class="input" required>
-            </div>
-            <div class="con-items">
-                <label for="subject" class="con-label">Subject</label>
-                <input id="con-subject" type="text" class="input" required>
-            </div>
-            <div class="con-items">
-                <label for="name" class="con-label">Message</label>
-                <textarea id="msg" class="text-area"></textarea>
+            <div class="msg">
+                <textarea placeholder="Write something"></textarea>
+                <div class="con-btn" >Submit</div>
             </div>
         </div>
-
-        <button type="submit" name="confirm " value="confirm form">Submit</button>
     </div>
-</div>
-</form>
-
 
 </body>
 </html>

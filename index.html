@@ -7,41 +7,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/main.css" />
     <script src="main.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 </head>
-<body>
-    <header>
+<body class="index-body">
+    <header id="top">
     <div id="container">
         <ul>
             <li>Home</li>
             <li>Activities
             <ul class="menu-1">
-                <li>Camping</li>
-                <li>Hiking</li>
-                <li>Fishing</li>
-                <li>Hunting</li>
-                <li>Climbing</li>
-                <li>Canoeing</li>
+               <a href="#camp"><li>Camping</li></a>
+               <a href="#hike"><li>Hiking</li></a> 
+               <a href="#fish"><li>Fishing</li></a> 
+               <a href="#hunt"><li>Hunting</li></a> 
+               <a href="#climb"><li>Climbing</li></a> 
+               <a href="#canoeing"><li>Canoeing</li></a> 
             </ul>
             </li>
             <li><a href="gallery.html" class="link-style">Gallery</a></li>
-            <li>Contact</li>
+            <li><a href="contact.html" class="link-style">Contact</a></li>
         </ul>
         </div>
         <p id="intro">Outdoor Activities in The Beautiful Western Cape.</p>
     </header>   
+
+    <h1 id="act-head">Activities</h1>    
+    
+
     <div id="card-container">
-        <div class="card-1">
+        <div class="card-1" id="camp">
             <input type="checkbox" name="">
             <div class="toggle-1">+</div>
             <div class="imgbox-1">
                 <img class="img img1 " src="images/camping.jpg" alt="" >
+                
             </div>
             <div class="content-1">
                 <h2>Camping</h2>
                 <p>When the chaos of city life gets too much, escape into the wild and stay the night, there are so many beautiful hiking trails in the WC thats its hard to find a place to start.</p>
+                
+
             </div>
         </div>
         
+       
+
+
         <div class="card-2">
             <input type="checkbox" name="">
             <div class="toggle-2">+</div>
@@ -49,8 +60,8 @@
                 <img class="img-2" src ="images/hiking.jpg" alt="">
             </div>
             <div class="content-2">
-                <h2>Camping</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea neque quidem cum ipsum magni tempore officiis provident, nesciunt, reiciendis eligendi, velit harum rem repellendus quibusdam sint ad cupiditate voluptatem laborum!</p>
+                <h2 id="hike">Hike</h2>
+                <p>South Africa has some of the beautiful hiking trails known to man. Some might say it is the eighth wonder of the world.</p>
             </div>
          </div>
     
@@ -63,7 +74,7 @@
             
             </div>
             <div class="content-3">     
-                    <h2>Fishing</h2>
+                    <h2 id="fish">Fishing</h2>
                     <p>Some people regard this as a boring or an old man's sport, but it's much more than that. If you have never experienced it, I think you are really missing something.The sport is unique compared to others, and it can be anything from a relaxing, to a very intense experience, and every time is different.</p>
             </div>
         </div>
@@ -77,7 +88,7 @@
                 
                 </div>
                 <div class="content-4">     
-                        <h2>Hunting</h2>
+                        <h2 id="hunt">Hunting</h2>
                         <p>
                             If you want to enjoy an excellent Hunting Safari in South Africa, look no further!! Game 4 Africa Hunting Safaris customize safari adventures for hunters and their families, ensuring that every detail of your hunting safari is adhered to in a professional manner.
                             
@@ -98,13 +109,9 @@
             
             </div>
             <div class="content-5">     
-                    <h2>Hiking</h2>
+                    <h2 id="hike">Rock climbing</h2>
                     <p>
-                        If you want to enjoy an excellent Hunting Safari in South Africa, look no further!! Game 4 Africa Hunting Safaris customize safari adventures for hunters and their families, ensuring that every detail of your hunting safari is adhered to in a professional manner.
-                        
-                        Game 4 Africa caters for your personal needs to ensure an unforgettable tailor-made Eastern Cape, African Hunting experience.
-                        
-                        South Africa has more game species available than any other country in Africa and together with a great climate it makes South Africa a unique hunting destination throughout the year
+                         South Africa offers some of the best climbing in the world. There are many different rock formations all with different features. Oudtshoorn crags are limestone with hanging stalactites and tufas.
                     </p>
             </div>
         </div>
@@ -119,10 +126,19 @@
                 
                 </div>
                 <div class="content-6">     
-                        <h2>Canoeing</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur odio minus, eum quas, pariatur veritatis totam amet ab, laudantium incidunt tempora! Explicabo ex neque, obcaecati perspiciatis distinctio suscipit dolores reiciendis..</p>
+                        <h2 id="canoeing">Canoeing</h2>
+                        <p>South Africa is blessed with fantastic rivers, beautiful scenery, and a climate made for the outdoors enthusiast, so if you’re looking for action of the paddling variety, you’re in for a treat.
+
+                        The most popular river for canoeing, rafting and kayaking – for good reason – is the Orange, which forms the country’s northern border with Namibia. It’s a long, green-fringed oasis running through the mountainous desert area known as the Richtersveld. Incredibly scenic, it also has a few fun rapids.</p>
                 </div>
             </div>
     </div>
+
+<footer>
+    <p>©2019 Tohier Dreyer</p>
+    
+    <a class="top" href="#top"><i class="fas fa-sort-up"></i></a>
+</footer>
+
 </body>
 </html>

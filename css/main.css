@@ -1,15 +1,30 @@
 * {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  scroll-behavior: smooth; }
+
+#act-head {
+  color: #070000;
+  text-align: center;
+  padding-bottom: 3.75rem;
+  padding-top: 3rem;
+  font-size: 5rem; }
+
+.index-body {
+  background: url(../images/sun.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-attachment: fixed; }
 
 #container {
-  margin-left: 57rem;
   display: inline-block;
-  position: fixed;
-  z-index: 1; }
+  width: 100%;
+  z-index: 1;
+  background-color: black; }
 
 #container ul {
-  list-style: none; }
+  list-style: none;
+  z-index: 1; }
 
 #container ul li {
   background-color: rgba(0, 0, 0, 0.582);
@@ -19,16 +34,20 @@
   text-align: center;
   float: left;
   color: white;
-  font-size: 1.1875rem; }
+  font-size: 1.1875rem;
+  z-index: 1; }
 
 #container ul li:hover {
-  background-color: rgba(0, 0, 0, 0.747); }
+  background-color: rgba(255, 238, 0, 0.829);
+  z-index: 1; }
 
 #container ul ul {
-  display: none; }
+  display: none;
+  z-index: 1; }
 
 #container ul li:hover > ul {
-  display: block; }
+  display: block;
+  z-index: 1; }
 
 header {
   background-image: url(../images/trial.jpg);
@@ -36,11 +55,10 @@ header {
   height: 100vh; }
 
 #intro {
-  color: #ff7b00;
+  color: white;
   text-align: center;
   font-size: 6rem;
-  text-shadow: 0.5rem 0.5rem rgba(0, 0, 0, 0.767);
-  padding-top: 20rem; }
+  padding-top: 18rem; }
 
 .gal-body {
   background: url(../images/gal-bg.jpg);
@@ -462,7 +480,33 @@ header {
   text-align: center;
   font-size: 5rem; }
 
-.card-1 {
+.link-style {
+  text-decoration: none;
+  color: white; }
+
+footer {
+  background: rgba(0, 0, 0, 0.582);
+  margin: 0.625rem;
+  height: 6.75rem;
+  border-radius: 0.3125rem;
+  text-align: center; }
+
+footer p {
+  color: white;
+  font-size: 4rem;
+  padding-top: 20px; }
+
+.top {
+  color: white; }
+
+i {
+  float: left;
+  position: fixed;
+  left: 1em;
+  bottom: 0.5em;
+  font-size: 3em; }
+
+#card-container .card-1 {
   position: relative;
   width: 50rem;
   height: 25rem;
@@ -470,33 +514,26 @@ header {
   overflow: hidden;
   margin-top: 3em;
   margin-left: 4em; }
-
-.img1 {
+#card-container .img1 {
   width: 100%;
   height: 26rem; }
-
-.img-2 {
+#card-container .img-2 {
   width: 100%;
   height: 26rem; }
-
-.img-3 {
+#card-container .img-3 {
   width: 100%;
   height: 26rem; }
-
-.img-4 {
+#card-container .img-4 {
   width: 100%;
   max-width: 100%; }
-
-.img-5 {
+#card-container .img-5 {
   margin: 0;
   max-width: 100%; }
-
-.img-6 {
+#card-container .img-6 {
   margin: 0;
   max-width: 100%; }
-
-input,
-.toggle-1 {
+#card-container input,
+#card-container .toggle-1 {
   position: absolute;
   width: 3.125rem;
   height: 3.125rem;
@@ -504,11 +541,9 @@ input,
   right: 1.25rem;
   outline: none;
   z-index: 10; }
-
-input {
+#card-container input {
   opacity: 0; }
-
-.toggle-1 {
+#card-container .toggle-1 {
   pointer-events: none;
   border-radius: 50%;
   background: black;
@@ -518,12 +553,10 @@ input {
   box-shadow: 0 0 0 0px #ffffff;
   transition: 0.5s;
   color: white; }
-
-input:checked ~ .toggle-1 {
+#card-container input:checked ~ .toggle-1 {
   box-shadow: 0 0 0 51rem #ffffff7c;
   transform: rotate(225deg); }
-
-.content-1 {
+#card-container .content-1 {
   position: absolute;
   top: 0;
   left: 0;
@@ -535,21 +568,17 @@ input:checked ~ .toggle-1 {
   pointer-events: none;
   transition: 0.5s;
   opacity: 0; }
-
-input:checked ~ .content-1 {
+#card-container input:checked ~ .content-1 {
   opacity: 1;
   transition-delay: 0.5s; }
-
-.content-1 h2 {
+#card-container .content-1 h2 {
   margin-bottom: 0.3125rem;
   font-size: 2rem; }
-
-.content-1 p {
+#card-container .content-1 p {
   margin: 0;
   font-size: 1.5em;
   padding-top: 30px; }
-
-.card-2 {
+#card-container .card-2 {
   position: relative;
   width: 21.875rem;
   height: 25rem;
@@ -557,9 +586,8 @@ input:checked ~ .content-1 {
   overflow: hidden;
   margin-top: 3em;
   margin-left: 4em; }
-
-input,
-.toggle-2 {
+#card-container input,
+#card-container .toggle-2 {
   position: absolute;
   width: 3.125rem;
   height: 3.125rem;
@@ -567,11 +595,9 @@ input,
   right: 1.25rem;
   outline: none;
   z-index: 10; }
-
-input {
+#card-container input {
   opacity: 0; }
-
-.toggle-2 {
+#card-container .toggle-2 {
   pointer-events: none;
   border-radius: 50%;
   background: black;
@@ -581,43 +607,36 @@ input {
   box-shadow: 0 0 0 0px #ffffff;
   transition: 0.5s;
   color: white; }
-
-input:checked ~ .toggle-2 {
+#card-container input:checked ~ .toggle-2 {
   box-shadow: 0 0 0 31.25rem #ffffffc0;
   transform: rotate(225deg); }
-
-.imgbox-2,
-.content-2 {
+#card-container .imgbox-2,
+#card-container .content-2 {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%; }
-
-.content-2 {
+#card-container .content-2 {
   padding: 1.25rem;
   box-sizing: border-box;
   z-index: 11;
   pointer-events: none;
   transition: 0.5s;
   opacity: 0; }
-
-input:checked ~ .content-2 {
+#card-container input:checked ~ .content-2 {
   opacity: 1;
   transition-delay: 0.5s; }
-
-.content-2 h2 {
+#card-container .content-2 h2 {
   margin-bottom: 0.3125rem;
   color: black;
   font-size: 2rem; }
-
-.content-2 p {
+#card-container .content-2 p {
   margin: 0;
   color: black;
   font-size: 1.5em;
   padding-top: 30px; }
-
-.card-3 {
+#card-container .card-3 {
   position: relative;
   width: 50rem;
   height: 25rem;
@@ -625,9 +644,8 @@ input:checked ~ .content-2 {
   overflow: hidden;
   margin-top: 3em;
   margin-left: 4em; }
-
-input,
-.toggle-3 {
+#card-container input,
+#card-container .toggle-3 {
   position: absolute;
   width: 3.125rem;
   height: 3.125rem;
@@ -635,11 +653,9 @@ input,
   right: 1.25rem;
   outline: none;
   z-index: 10; }
-
-input {
+#card-container input {
   opacity: 0; }
-
-.toggle-3 {
+#card-container .toggle-3 {
   pointer-events: none;
   border-radius: 50%;
   background: black;
@@ -649,43 +665,36 @@ input {
   box-shadow: 0 0 0 0px #ffffff;
   transition: 0.5s;
   color: white; }
-
-input:checked ~ .toggle-3 {
+#card-container input:checked ~ .toggle-3 {
   box-shadow: 0 0 0 51rem #ffffff9f;
   transform: rotate(225deg); }
-
-.imgbox-3,
-.content-3 {
+#card-container .imgbox-3,
+#card-container .content-3 {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%; }
-
-.content-3 {
+#card-container .content-3 {
   padding: 1.25rem;
   box-sizing: border-box;
   z-index: 11;
   pointer-events: none;
   transition: 0.5s;
   opacity: 0; }
-
-input:checked ~ .content-3 {
+#card-container input:checked ~ .content-3 {
   opacity: 1;
   transition-delay: 0.5s; }
-
-.content-3 h2 {
+#card-container .content-3 h2 {
   margin-bottom: 0.3125rem;
   color: black;
   font-size: 2rem; }
-
-.content-3 p {
+#card-container .content-3 p {
   margin: 0;
   color: black;
   font-size: 1.5em;
   padding-top: 30px; }
-
-.card-4 {
+#card-container .card-4 {
   position: relative;
   width: 50rem;
   height: 25rem;
@@ -693,9 +702,8 @@ input:checked ~ .content-3 {
   overflow: hidden;
   margin-top: 3em;
   margin-left: 4em; }
-
-input,
-.toggle-4 {
+#card-container input,
+#card-container .toggle-4 {
   position: absolute;
   width: 3.125rem;
   height: 3.125rem;
@@ -703,11 +711,9 @@ input,
   right: 1.25rem;
   outline: none;
   z-index: 10; }
-
-input {
+#card-container input {
   opacity: 0; }
-
-.toggle-4 {
+#card-container .toggle-4 {
   pointer-events: none;
   border-radius: 50%;
   background: black;
@@ -717,43 +723,36 @@ input {
   box-shadow: 0 0 0 0px #ffffff;
   transition: 0.5s;
   color: white; }
-
-input:checked ~ .toggle-4 {
+#card-container input:checked ~ .toggle-4 {
   box-shadow: 0 0 0 51rem #ffffff9f;
   transform: rotate(225deg); }
-
-.imgbox-4,
-.content-4 {
+#card-container .imgbox-4,
+#card-container .content-4 {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%; }
-
-.content-4 {
+#card-container .content-4 {
   padding: 1.25rem;
   box-sizing: border-box;
   z-index: 11;
   pointer-events: none;
   transition: 0.5s;
   opacity: 0; }
-
-input:checked ~ .content-4 {
+#card-container input:checked ~ .content-4 {
   opacity: 1;
   transition-delay: 0.5s; }
-
-.content-4 h2 {
+#card-container .content-4 h2 {
   margin-bottom: 0.3125rem;
   color: black;
   font-size: 2rem; }
-
-.content-4 p {
+#card-container .content-4 p {
   margin: 0;
   color: black;
   font-size: 1.5em;
   padding-top: 30px; }
-
-.card-5 {
+#card-container .card-5 {
   position: relative;
   width: 21.875rem;
   height: 25rem;
@@ -761,9 +760,8 @@ input:checked ~ .content-4 {
   overflow: hidden;
   margin-top: 3em;
   margin-left: 4em; }
-
-input,
-.toggle-5 {
+#card-container input,
+#card-container .toggle-5 {
   position: absolute;
   width: 3.125rem;
   height: 3.125rem;
@@ -771,11 +769,9 @@ input,
   right: 1.25rem;
   outline: none;
   z-index: 10; }
-
-input {
+#card-container input {
   opacity: 0; }
-
-.toggle-5 {
+#card-container .toggle-5 {
   pointer-events: none;
   border-radius: 50%;
   background: black;
@@ -785,43 +781,36 @@ input {
   box-shadow: 0 0 0 0px #ffffff;
   transition: 0.5s;
   color: white; }
-
-input:checked ~ .toggle-5 {
+#card-container input:checked ~ .toggle-5 {
   box-shadow: 0 0 0 31.25rem #ffffffc2;
   transform: rotate(225deg); }
-
-.imgbox-5,
-.content-5 {
+#card-container .imgbox-5,
+#card-container .content-5 {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%; }
-
-.content-5 {
+#card-container .content-5 {
   padding: 1.25rem;
   box-sizing: border-box;
   z-index: 11;
   pointer-events: none;
   transition: 0.5s;
   opacity: 0; }
-
-input:checked ~ .content-5 {
+#card-container input:checked ~ .content-5 {
   opacity: 1;
   transition-delay: 0.5s; }
-
-.content-5 h2 {
+#card-container .content-5 h2 {
   margin-bottom: 0.3125rem;
   color: black;
   font-size: 2rem; }
-
-.content-5 p {
+#card-container .content-5 p {
   margin: 0;
   color: black;
   font-size: 1.5em;
   padding-top: 30px; }
-
-.card-6 {
+#card-container .card-6 {
   position: relative;
   width: 50rem;
   height: 25rem;
@@ -829,9 +818,8 @@ input:checked ~ .content-5 {
   overflow: hidden;
   margin-top: 3em;
   margin-left: 4em; }
-
-input,
-.toggle-6 {
+#card-container input,
+#card-container .toggle-6 {
   position: absolute;
   width: 3.125rem;
   height: 3.125rem;
@@ -839,11 +827,9 @@ input,
   right: 1.25rem;
   outline: none;
   z-index: 10; }
-
-input {
+#card-container input {
   opacity: 0; }
-
-.toggle-6 {
+#card-container .toggle-6 {
   pointer-events: none;
   border-radius: 50%;
   background: black;
@@ -853,124 +839,47 @@ input {
   box-shadow: 0 0 0 0px #ffffff;
   transition: 0.5s;
   color: white; }
-
-input:checked ~ .toggle-6 {
+#card-container input:checked ~ .toggle-6 {
   box-shadow: 0 0 0 51rem #ffffff9f;
   transform: rotate(225deg); }
-
-.imgbox-6,
-.content-6 {
+#card-container .imgbox-6,
+#card-container .content-6 {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%; }
-
-.content-6 {
+#card-container .content-6 {
   padding: 1.25rem;
   box-sizing: border-box;
   z-index: 11;
   pointer-events: none;
   transition: 0.5s;
   opacity: 0; }
-
-input:checked ~ .content-6 {
+#card-container input:checked ~ .content-6 {
   opacity: 1;
   transition-delay: 0.5s; }
-
-.content-6 h2 {
+#card-container .content-6 h2 {
   margin-bottom: 0.3125rem;
   color: black;
   font-size: 2rem; }
-
-.content-6 p {
+#card-container .content-6 p {
   margin: 0;
   color: black;
   font-size: 1.5em;
   padding-top: 30px; }
 
-#con-html {
-  margin: 0;
-  padding: 0;
-  outline: none;
-  box-sizing: border-box; }
+@media screen and (max-width: 600px) {
+  .contact-form {
+    flex-direction: column; }
 
-#con-body {
-  font-family: 'ZCOOL KuaiLe', cursive;
-  background: url(../images/bg.jpg) no-repeat top center;
-  width: 100%;
-  height: 100vh;
-  background-size: cover;
-  font-size: 1rem; }
+  .msg textarea {
+    height: 5rem; }
 
-.con-wrapper {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%); }
-
-.con-us {
-  width: 100%;
-  max-width: 31.25rem;
-  height: auto;
-  background: rgba(0, 0, 0, 0.7);
-  padding: 2.5rem 3.125rem;
-  border-radius: 0.3125rem; }
-
-.con-title {
-  font-size: 2em;
-  line-height: 1.25em;
-  text-align: center;
-  text-transform: uppercase;
-  font-weight: 900;
-  letter-spacing: 0.125rem;
-  color: #ffc107;
-  padding-bottom: 0.9375rem; }
-
-.con-input {
-  padding: 0 1.875rem; }
-
-.con-input .con-items {
-  width: 100%;
-  padding-bottom: 0.9375rem; }
-
-.con-input .con-items .con-label {
-  display: block;
-  font-size: 1em;
-  color: white;
-  text-transform: capitalize;
-  padding-bottom: 0.3125rem; }
-
-.con-input .con-items .input,
-.con-input .con-items .text-area {
-  background: transparent;
-  border: 0;
-  border: 0.0625rem solid white;
-  width: 100%;
-  padding: 0.5rem 0.625rem;
-  font-size: 1em;
-  color: white;
-  border-radius: 0.1875rem; }
-
-button {
-  margin-left: 4.5rem;
-  background: #ffc107;
-  color: white;
-  font-size: 1.25em;
-  padding: 1rem;
-  text-align: center;
-  text-transform: uppercase;
-  font-weight: bold;
-  border-radius: 0.3125rem;
-  cursor: pointer;
-  letter-spacing: 0.125rem; }
-
-.link-style {
-  text-decoration: none;
-  color: white; }
-
+  .input-fields,
+  .msg {
+    width: 100%; } }
 #card-container {
-  background-color: black;
   display: grid;
   margin: 0 auto;
   max-width: 1000px;
@@ -995,5 +904,64 @@ button {
 
 .card-6 {
   grid-area: card6; }
+
+.con-body {
+  background: url(../images/sunset.jpg) no-repeat top center;
+  background-size: cover;
+  height: 100vh; }
+
+.con-wrapper {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 90%;
+  padding: 0 1.25rem; }
+
+.contact-form {
+  max-width: 40.375rem;
+  margin: 0 auto;
+  background: rgba(0, 0, 0, 0.8);
+  padding: 1.875rem;
+  border-radius: 0.3125rem;
+  display: flex;
+  box-shadow: 0,0,0.625rem white;
+  height: 30rem; }
+
+.input-fields {
+  display: flex;
+  flex-direction: column;
+  margin-right: 4%; }
+
+.input-fields,
+.msg {
+  width: 48%; }
+
+.input-fields .con-input,
+.msg textarea {
+  margin: 0.625rem 0;
+  background: transparent;
+  border: 0;
+  border-bottom: 0.125rem solid #c5ecfd;
+  padding: 0.625rem;
+  color: #c5ecfd;
+  width: 100%; }
+
+.msg textarea {
+  height: 13.25rem; }
+
+.con-btn {
+  background: #39b7dd;
+  text-align: center;
+  padding: 0.9375rem;
+  border-radius: 0.3125rem;
+  color: #fff;
+  cursor: pointer;
+  text-transform: uppercase; }
+
+::-webkit-input-placeholder {
+  color: #c5ecfd; }
+
+::-moz-input-placeholder {
+  color: #c5ecfd; }
 
 /*# sourceMappingURL=main.css.map */
