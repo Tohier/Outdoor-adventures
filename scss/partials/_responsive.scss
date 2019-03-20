@@ -1,5 +1,5 @@
  
- @media screen and (max-width: 600px){
+ @media screen and (max-width: 375px){
      .contact-form {
          flex-direction: column;
      }
@@ -11,6 +11,13 @@
          width: 100%;
      }
 
+     .masonry {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(6, 20rem);
+            grid-gap: 1rem;
+     
+     }
  }
 
  

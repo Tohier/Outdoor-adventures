@@ -1,0 +1,19 @@
+.masonry {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(6, 20rem);
+    grid-gap: 1rem;
+     
+    img {
+        width: 100%;
+        height: 100%;
+        z-index: -5;
+    }
+}
+
+.gal-body {
+    background: url(../../images/gal-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
