@@ -1,23 +1,73 @@
- 
- @media screen and (max-width: 375px){
-     .contact-form {
-         flex-direction: column;
-     }
-     .msg textarea{
-         height: 5rem;
-     }
-     .input-fields,
-     .msg{
-         width: 100%;
-     }
+@media only screen
+        and (min-device-width: 320px)
+        and (max-device-width: 767px) {
+  .contact-form {
+    flex-direction: column;
+  }
+  .msg textarea {
+    height: 5rem;
+  }
+  .input-fields,
+  .msg {
+    width: 100%;
+  }
+//    responsive gallery for mobile
+  .masonry {
+    display: block !important;
+    grid-gap: 5px !important    ;
+  }
+//   the gallery heading
+  #act-head {
+    color: rgb(7, 0, 0);
+    text-align: center;
+    padding-bottom: 3.75rem;
+    padding-top: 3rem;
+    font-size: 200%;    
+}
+//  the nav bar 
+#container ul li {
+    background-color: rgb(0, 0, 0);
+    width: 4.375rem;
+    height: 3.125rem;
+    line-height: 3.125rem;
+    text-align: center;
+    float: left;
+    color: rgb(255, 255, 255);
+    font-size: 1rem;
+    z-index: 20;
+}
+#intro {
+    color: white;
+    text-align: center;
+    font-size: 3rem;
+    padding-top: 20rem;
+    z-index: -6;
+}
+#card-container {
+.card-1, .card-2, .card-3, .card-4, .card-5, .card-6 {
+    position: relative;
+    width: 100vw;
+    height: 25rem;
+    background: black;
+    overflow: hidden;
+    margin-top: 3em;
+    margin-left: 0px;
+    font-size: 80%;
+}
 
-     .masonry {
-            display: grid;
-            grid-template-columns: 1fr;
-            grid-template-rows: repeat(6, 20rem);
-            grid-gap: 1rem;
-     
-     }
- }
+.img-4 {
+  height: 105%;
+}
 
- 
+.img-6 {
+  height: inherit;
+}
+
+
+}
+footer p {
+    color: white;
+    font-size: 1rem;
+    padding-top: 20px;
+}
+}
